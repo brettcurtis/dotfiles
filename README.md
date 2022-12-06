@@ -36,6 +36,9 @@ git config --global user.name "Brett Curtis"
 git config --global commit.gpgsign true
 ```
 
+```none
+git config --global pull.rebase true
+```
 
 ```none
 cat << EOF >> ~/.gnupg/gpg-agent.conf
