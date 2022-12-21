@@ -13,6 +13,10 @@ wget https://raw.githubusercontent.com/brettcurtis/dotfiles/master/.p10k.zsh
 ```
 
 ```none
+echo '[[ ! -f  /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh ]] || source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh' >> ~/.zshrc
+```
+
+```none
 echo '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >> ~/.zshrc
 ```
 
