@@ -21,11 +21,11 @@ echo '[[ ! -f ~/.exports ]] || source ~/.exports' >> ~/.zshrc
 ```
 
 ```none
-ln -s /mnt/c/Users/brett-home/Desktop desktop
+ln -s /mnt/c/Users/brett/Desktop desktop
 ```
 
 ```none
-git config --global user.email "email@example.com"
+git config --global user.email "brett@example.com"
 ```
 
 ```none
@@ -41,6 +41,10 @@ git config --global pull.rebase true
 ```
 
 ```none
+git config --global fetch.prune true
+```
+
+```none
 cat << EOF >> ~/.gnupg/gpg-agent.conf
 default-cache-ttl 34560000
 max-cache-ttl 34560000
@@ -50,5 +54,5 @@ EOF
 ## oh-my-zsh-plugins
 
 ```none
-plugins=(git terraform gcloud aws bundler docker kubectl kubectx gem helm kitchen ubuntu vault zsh-autosuggestions)
+plugins=(git terraform gcloud bundler docker kubectl gem helm kitchen vault zsh-autosuggestions)
 ```
