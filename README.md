@@ -60,3 +60,9 @@ EOF
 ```none
 plugins=(git terraform gcloud bundler docker kubectl gem helm kitchen vault zsh-autosuggestions)
 ```
+
+## gpg
+
+```none
+echo "test" | gpg --pinentry-mode loopback --passphrase "top secret- passphrase dude!" --clearsign > /dev/null 2>&1
+```
