@@ -64,5 +64,5 @@ plugins=(git terraform gcloud bundler docker kubectl gem helm kitchen vault zsh-
 ## gpg
 
 ```none
-echo "test" | gpg --pinentry-mode loopback --passphrase "top secret- passphrase dude!" --clearsign > /dev/null 2>&1
+echo "test" | gpg --pinentry-mode loopback --passphrase "top secret passphrase dude!" --clearsign > /dev/null 2>&1
 ```
