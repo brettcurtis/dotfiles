@@ -41,14 +41,6 @@ git config --global commit.gpgsign true
 ```
 
 ```none
-git config --global pull.rebase true
-```
-
-```none
-git config --global fetch.prune true
-```
-
-```none
 cat << EOF >> ~/.gnupg/gpg-agent.conf
 default-cache-ttl 34560000
 max-cache-ttl 34560000
