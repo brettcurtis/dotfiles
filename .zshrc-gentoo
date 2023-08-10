@@ -73,6 +73,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git terraform gcloud bundler docker kubectl kubectx gem helm kitchen vault zsh-autosuggestions)
 
+eval "$(dircolors -p | \
+    sed 's/ 4[0-9];/ 01;/; s/;4[0-9];/;01;/g; s/;4[0-9] /;01 /' | \
+    dircolors /dev/stdin)"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -109,7 +113,6 @@ export RUBYOPT="-W:no-deprecated -W:no-experimental"
 export BUNDLE_GEMFILE=$HOME/Gemfile
 export GOPATH="/home/brett/go"
 export BROWSER='/mnt/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe'
-export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
 autoload -U compinit promptinit
       compinit
