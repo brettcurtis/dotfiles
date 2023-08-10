@@ -112,7 +112,6 @@ export GPG_TTY=$TTY
 export EDITOR=vim
 export RUBYOPT="-W:no-deprecated -W:no-experimental"
 export BUNDLE_GEMFILE=$HOME/Gemfile
-export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
 zstyle ':completion::complete:*' use-cache 1
 
