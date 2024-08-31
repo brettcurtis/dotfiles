@@ -1,5 +1,6 @@
+set background=dark
 set visualbell
-  
+
 execute pathogen#infect()
 
 filetype plugin indent on
